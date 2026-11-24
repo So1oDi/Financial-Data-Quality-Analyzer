@@ -1,0 +1,10 @@
+.venv/
+.venv-fin/
+backups/
+data/mlflow/
+data/*.duckdb*
+.runtime/
+__pycache__/
+.pytest_cache/
+*.pyc
+
