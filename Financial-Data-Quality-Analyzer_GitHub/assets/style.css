@@ -1,0 +1,19 @@
+.block-container {max-width: 1340px; padding-top: 3.1rem; padding-bottom: 4rem;}
+[data-testid="stSidebar"] {border-right: 1px solid #2a3a4c;}
+[data-testid="stMetric"] {background: #182634; border: 1px solid #31465a; border-radius: 14px; padding: 1rem;}
+[data-testid="stMetricValue"] {color:#79e8d1;}
+[data-testid="stMetricLabel"] {color:#bbcad9;}
+[data-testid="stMetricLabel"] p {white-space:normal;overflow-wrap:anywhere;}
+[data-testid="stMetricLabel"] > div {white-space:normal;}
+[data-testid="stMetricValue"] > div {white-space:normal;overflow-wrap:anywhere;}
+.stAppDeployButton {display:none;}
+[data-testid="stFileUploaderDropzone"] button [data-testid="stMarkdownContainer"] p,
+[data-testid="stFileUploaderDropzoneInstructions"] span {display:none;}
+[data-testid="stFileUploaderDropzone"] button [data-testid="stMarkdownContainer"]::after {content:"Обрати файл";}
+[data-testid="stFileUploaderDropzoneInstructions"]::after {content:"До 25 МБ · CSV, XLSX";font-size:.85rem;}
+h1, h2, h3 {letter-spacing: -.025em;}
+.hero {background: linear-gradient(115deg,#1b3542,#192539);border:1px solid #355166;border-radius:20px;padding:clamp(1.3rem,4vw,3rem);margin-bottom:1rem}
+.hero h1 {margin:0;padding:0;font-size:clamp(2rem,5vw,3.6rem);line-height:1.04;}
+.hero p {color:#cedce8;margin:1rem 0 0;max-width:43rem;}
+@media(max-width:720px) {[data-testid="stHorizontalBlock"] {flex-wrap:wrap;gap:.6rem;} [data-testid="stColumn"] {min-width:min(100%, 175px);}}
+

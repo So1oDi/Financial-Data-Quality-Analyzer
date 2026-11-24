@@ -1,0 +1,44 @@
+erDiagram
+  dim_date ||--o{ fact_transactions : "визначає"
+  dim_date {
+    INTEGER id PK
+    DATE value UK
+  }
+  dim_category ||--o{ fact_transactions : "визначає"
+  dim_category {
+    INTEGER id PK
+    VARCHAR value UK
+  }
+  dim_department ||--o{ fact_transactions : "визначає"
+  dim_department {
+    INTEGER id PK
+    VARCHAR value UK
+  }
+  dim_counterparty ||--o{ fact_transactions : "визначає"
+  dim_counterparty {
+    INTEGER id PK
+    VARCHAR value UK
+  }
+  dim_payment_method ||--o{ fact_transactions : "визначає"
+  dim_payment_method {
+    INTEGER id PK
+    VARCHAR value UK
+  }
+  dim_transaction_type ||--o{ fact_transactions : "визначає"
+  dim_transaction_type {
+    INTEGER id PK
+    VARCHAR value UK
+  }
+  fact_transactions {
+    VARCHAR transaction_id PK
+    INTEGER date_id FK
+    INTEGER category_id FK
+    INTEGER department_id FK
+    INTEGER counterparty_id FK
+    INTEGER payment_method_id FK
+    INTEGER transaction_type_id FK
+    DECIMAL amount
+    VARCHAR currency
+    VARCHAR status
+    VARCHAR description
+  }
